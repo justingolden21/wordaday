@@ -1,6 +1,8 @@
-# <img src="icon.png" width="64px"> WordADay
+# <img src="icon.png" width="64px"> wordaday
 
 ### About
+
+##### A word a day
 
 A new word appears every day, from Jan 1 - Dec 31
 
