@@ -125,18 +125,10 @@ function dayOfYear() {
 
 window.onload = () => {
 	if( (new Date() ).getFullYear()=='2020') {
-		document.getElementById('story').innerHTML = 
-		`Starting Jan 1st, 2021
-		<br>
-		<a
-			class="text-white hover:text-yellow-500 underline hover:no-underline"
-			href="https://www.google.com/search?q=remind+me+jan+1+2021+to+check+a+story+a+day" target="_blank">
-			Remind me
-		</a>`;
 		return;
 	}
 
-	// -------- --------
+	document.getElementById('wait').style.display = 'none';
 
 	let day = dayOfYear();
 	let words = STORY.replaceAll('\n\n','<br><br> ').replaceAll('\n','<br> ').split(' ');
