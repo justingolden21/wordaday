@@ -23,3 +23,7 @@ Check each morning for the new word : )
 - My repos: https://github.com/justingolden21
 
 - Contact me: contact@justingolden.me
+
+### Note
+
+Yes, obviously you could inspect element, or look at the source code in git, but what fun would that be? Don't ruin it for others.

@@ -1,5 +1,7 @@
 const STORY = 
-`In the darkness,
+`<b>Wrong Note</b>
+
+In the darkness,
 my reflection
 dreams of a symphony
 in the garden.
@@ -56,6 +58,58 @@ speckled tears on my note.
 If you are not
 my reflection
 then you have the wrong note.
+
+<hr><b>Dream of Glass</b>
+
+I dream of beaches
+of waves and sand castles
+mighty and beautiful, 
+strong and fierce.
+Turn the sand into glass
+and you know what they say 
+about those who live
+in glass houses...
+
+To dream of glass
+is to accept how fragile
+it is to dream.
+And when it breaks
+you are left with just shards of 
+your reflection
+staring back
+questioning you...
+
+The world is built on sand
+and lines in it
+and so is yours.
+It is always rewritten
+take a moment
+to step and stop to leave your footprints
+before they wash away...
+
+The more sand falls
+from our hourglass
+the clearer we can see
+what we have become.
+Time falls like sand
+grasp it and it falls through your hands...
+
+So I should simply dream
+of building sand castles by the beach.
+Should I dream of a simpler time
+or of what the future holds?
+When I was young, with heart of glass
+or with my friends or on a date
+or with my kids or grandkids.
+I am never too old
+to play with sand
+or to dream of glass...
+
+Better to have lived a life
+with broken heart and empty soul
+than a life in fear
+of grains of sand
+and where they fall...
 `;
 
 
