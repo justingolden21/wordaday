@@ -124,7 +124,9 @@ function dayOfYear() {
 }
 
 window.onload = () => {
+
 	if( (new Date() ).getFullYear()=='2020') {
+		document.getElementById('progress').style.display = 'none';
 		return;
 	}
 
@@ -143,4 +145,6 @@ window.onload = () => {
 	}
 	document.getElementById('story').innerHTML = currentStory;
 	document.getElementById('day').innerHTML = day;
+
+	document.getElementById('progress').style.width = `${100*day/365}%`;
 };
