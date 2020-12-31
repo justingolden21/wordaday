@@ -1,4 +1,4 @@
-window.onload = function() {
+function modalSetup() {
 
 	let modal = document.getElementById('modal');
 	let btn = document.getElementById('modal-btn');
@@ -24,4 +24,4 @@ window.onload = function() {
 		}
 	}
 
-};
+}

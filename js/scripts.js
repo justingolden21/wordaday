@@ -125,6 +125,8 @@ function dayOfYear() {
 
 window.onload = () => {
 
+	modalSetup();
+
 	if( (new Date() ).getFullYear()=='2020') {
 		document.getElementById('progress').style.display = 'none';
 		return;
