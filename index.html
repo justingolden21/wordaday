@@ -16,7 +16,9 @@
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/modal.css">
 <script src="js/scripts.js"></script>
+<script src="js/modal.js"></script>
 
 </head>
 <body class="mx-24 my-12 text-white bg-black">
@@ -26,15 +28,36 @@
 	<div id="progress" class="border-yellow-500 border-2" style="position: relative; top: -2rem;"></div>
 	<div class="border-yellow-500 inline border-2" style="position: relative; top: 2rem; left: -1rem;"></div>
 	<p id="story"></p>
-	<p id="wait">Starting Jan 1st, 2021<br><a rel="noopener" class="text-white hover:text-yellow-500 underline hover:no-underline" href="https://www.google.com/search?q=remind+me+jan+1+2021+to+check+a+word+a+day+at+justingolden.me%2Fwordaday" target="_blank">Remind me </a></p>
+	<p id="wait">Starting Jan 1st, 2021<br><a rel="noopener" class="text-white hover:text-yellow-500 underline hover:no-underline" title="Set a reminder via Google" href="https://www.google.com/search?q=remind+me+jan+1+2021+to+check+a+word+a+day+at+justingolden.me%2Fwordaday" target="_blank">Remind me </a></p>
 	<p class="text-right mt-8">
 		by <a rel="noopener" class="text-white hover:text-yellow-500 underline hover:no-underline" href="https://justingolden.me" target="_blank">Justin Golden</a>
 		<br><br>
-		<a rel="noopener" title="Share on Facebook" href="https://www.facebook.com/sharer.php?t=A%20word%20a%20day&u=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-facebook-f"></i></a> &nbsp;
-		<a rel="noopener" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=A%20word%20a%20day&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp;
-		<a rel="noopener" title="Share on Pinterest" href="https://www.pinterest.com/pin/create/button/?description=A%20word%20a%20day&media=&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-pinterest-p"></i></a> &nbsp;
-		<a rel="noopener" title="Share on Reddit" href="https://reddit.com/submit?title=A%20word%20a%20day&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-reddit-alien"></i></a> &nbsp;
-		<a rel="noopener" title="Share via Email" href="mailto:?subject=A%20word%20a%20day&body=A%20word%20a%20day%0A%0Ahttps%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fas fa-envelope"></i></a>
+		<a class="hover:text-yellow-500" rel="noopener" title="Share on Facebook" href="https://www.facebook.com/sharer.php?t=A%20word%20a%20day&u=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-facebook-f"></i></a> &nbsp;
+		<a class="hover:text-yellow-500" rel="noopener" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=A%20word%20a%20day&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp;
+		<a class="hover:text-yellow-500" rel="noopener" title="Share on Pinterest" href="https://www.pinterest.com/pin/create/button/?description=A%20word%20a%20day&media=&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-pinterest-p"></i></a> &nbsp;
+		<a class="hover:text-yellow-500" rel="noopener" title="Share on Reddit" href="https://reddit.com/submit?title=A%20word%20a%20day&url=https%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fab fa-reddit-alien"></i></a> &nbsp;
+		<a class="hover:text-yellow-500" rel="noopener" title="Share via Email" href="mailto:?subject=A%20word%20a%20day&body=A%20word%20a%20day%0A%0Ahttps%3A%2F%2Fjustingolden.me%2Fwordaday%2F" target="_blank"><i class="fas fa-envelope"></i></a>
 	</p>
+
+	<button id="modal-btn" class="absolute top-0 left-0 m-4 p-1 rounded-none hover:text-yellow-500" title="About this project"><i class="fas fa-info"></i></button>
+	<div id="modal" class="modal">
+		<div class="modal-content border-2 border-yellow-500">
+			<button class="close hover:text-yellow-500 px-2 rounded-none text-lg" title="Close"><i class="fas fa-times"></i></button>
+			<p class="text-2xl">About</p>
+			<hr class="m-4">
+			<p class="font-bold tracking-wider">License</p>
+			<p>Please do not distribute this work unless it is available for free. Do not remove my name from the bottom or alter the work in any way. You are (of course) free to share this website however you wish, and free to use this work as inpiration. Thank you for reading my work and respecting my wishes.</p>
+			<br>
+			<p class="font-bold tracking-wider">Media queries</p>
+			<p>Email me at <a class="text-white hover:text-yellow-500 underline hover:no-underline" href="mailto:contact@justingolden.me" target="_blank">contact@justingolden.me</a></p>
+
+			<br>
+			<p class="font-bold tracking-wider">About</p>
+			<p>A new word will be revealed each day for a year. Check in at the beginning (or end) of your day to watch a story unfold, and savor it, one word at a time <i class="fas fa-smile"></i></p>
+			<hr class="m-4">
+			<p class="text-center">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Justin Golden</p>
+		</div>
+	</div>
+
 </body>
 </html>
